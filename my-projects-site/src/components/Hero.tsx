@@ -1,0 +1,31 @@
+import "../styles/hero.css";
+
+export function Hero() {
+  return (
+    <section className="hero-section">
+      <div className="hero-inner">
+        <div className="hero-left">
+          <p className="hero-intro">Hello, my name is</p>
+
+          <h1 className="hero-title">
+            Albert <span>Allermann Beck</span>
+          </h1>
+
+          <p className="hero-subtitle">
+            This is my project portfolio.
+            With project development spanning across my bachelor and master study.
+          </p>
+        </div>
+
+        <div className="hero-right">
+          <div className="hero-large-image">
+            <img
+              src="/projects%20images/Albert_Black_bg.png"
+              alt="Albert Beck portrait on black background"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

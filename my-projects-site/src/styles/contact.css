@@ -1,0 +1,29 @@
+.contact {
+  margin-top: 96px;
+  padding: 56px;
+  background: #111;
+  color: white;
+  border-radius: 28px;
+}
+
+.contact .eyebrow {
+  color: #aaa;
+}
+
+.contact h2 {
+  margin: 0 0 16px;
+  font-size: clamp(2rem, 5vw, 4rem);
+  letter-spacing: -0.06em;
+}
+
+.contact p {
+  max-width: 560px;
+  color: #d6d6d6;
+  line-height: 1.6;
+}
+
+@media (max-width: 620px) {
+  .contact {
+    padding: 32px;
+  }
+}
