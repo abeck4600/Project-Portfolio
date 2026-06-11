@@ -4,35 +4,45 @@ import "./styles/global.css";
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
 import { AboutMe } from "./components/AboutMe";
-import { Toolbar } from "./components/Toolbar";
-import { ProjectGrid } from "./components/ProjectGrid";
+import { HighlightedProjects } from "./components/HighlightedProjects";
+import { AllProjectsTab } from "./components/AllProjectsTab";
 import { Contact } from "./components/Contact";
 
 import { projects } from "./data/projects";
 
 export default function App() {
+  const searchParams = new URLSearchParams(window.location.search);
+  const showAllProjectsTab = searchParams.get("view") === "all-projects";
+
+  if (showAllProjectsTab) {
+    return (
+      <>
+        <Navbar />
+        <AllProjectsTab projects={projects} />
+      </>
+    );
+  }
+
   return (
     <>
       <Navbar />
       <Hero />
       <AboutMe />
 
-      {/* Placeholder anchors for Master/Bachelor menu links */}
-      <div id="master-1" />
-      <div id="master-2" />
-      <div id="master-3" />
-      <div id="master-4" />
-
-      <div id="bachelor-1" />
-      <div id="bachelor-2" />
-      <div id="bachelor-3" />
-      <div id="bachelor-4" />
-      <div id="bachelor-5" />
-      <div id="bachelor-6" />
-
       <main className="page">
-        <Toolbar projectCount={projects.length} />
-        <ProjectGrid projects={projects} />
+        <HighlightedProjects projects={projects} />
+
+        <section className="projects-archive-cta">
+          <h2 className="project-section-title">All Projects</h2>
+          <p>
+            The remaining projects are available in a separate tab so the front
+            page stays focused.
+          </p>
+          <a href="/?view=all-projects">
+            Open all projects
+          </a>
+        </section>
+
         <Contact />
       </main>
     </>

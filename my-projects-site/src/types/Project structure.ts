@@ -6,6 +6,7 @@ export type Project = {
   course?: string;
   tags?: string[];
   isThesis?: boolean;
+  isHighlighted?: boolean;
   longDescription?: string;
   videoUrl?: string;
 };

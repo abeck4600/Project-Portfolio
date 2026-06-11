@@ -43,20 +43,20 @@ export function Navbar() {
             <div className="dropdown-menu two-column">
               <div className="dropdown-column">
                 <h4>Master</h4>
-                <a href="#master-4">Master Project</a>
-                <a href="#master-3">Semester 3</a>
-                <a href="#master-2">Semester 2</a>
-                <a href="#master-1">Semester 1</a>
+                <a href="/?view=all-projects#master-project">Master Project</a>
+                <a href="/?view=all-projects#semester-9">Semester 3</a>
+                <a href="/?view=all-projects#semester-8">Semester 2</a>
+                <a href="/?view=all-projects#semester-7">Semester 1</a>
               </div>
 
               <div className="dropdown-column">
                 <h4>Bachelor</h4>
-                <a href="#bachelor-6">Bachelor Project</a>
-                <a href="#bachelor-5">Semester 5</a>
-                <a href="#bachelor-4">Semester 4</a>
-                <a href="#bachelor-3">Semester 3</a>
-                <a href="#bachelor-2">Semester 2</a>
-                <a href="#bachelor-1">Semester 1</a>
+                <a href="/?view=all-projects#semester-6">Bachelor Project</a>
+                <a href="/?view=all-projects#semester-5">Semester 5</a>
+                <a href="/?view=all-projects#semester-4">Semester 4</a>
+                <a href="/?view=all-projects#semester-3">Semester 3</a>
+                <a href="/?view=all-projects#semester-2">Semester 2</a>
+                <a href="/?view=all-projects#semester-1">Semester 1</a>
               </div>
             </div>
           </div>

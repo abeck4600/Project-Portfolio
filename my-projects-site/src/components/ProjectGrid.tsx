@@ -10,6 +10,14 @@ type ProjectGridProps = {
 export function ProjectGrid({ projects }: ProjectGridProps) {
   const thesisProject = projects.find((project) => project.isThesis);
   const otherProjects = projects.filter((project) => !project.isThesis);
+
+  function getSemesterAnchorId(semester: string) {
+    const match = semester.match(/^\s*(\d+)\./);
+    if (match) {
+      return `semester-${match[1]}`;
+    }
+    return `semester-${semester.toLowerCase().replace(/\s+/g, "-")}`;
+  }
   
   // Group projects by semester
   const projectsBySemester = otherProjects.reduce(
@@ -25,13 +33,24 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
   );
 
   // Sort semesters in order
-  const semesterOrder = ["3. semester", "2. semester", "1. semester", "Other"];
+  const semesterOrder = [
+    "9. semester",
+    "8. semester",
+    "7. semester",
+    "6. semester",
+    "5. semester",
+    "4. semester",
+    "3. semester",
+    "2. semester",
+    "1. semester",
+    "Other",
+  ];
   const sortedSemesters = semesterOrder.filter((sem) => projectsBySemester[sem]);
 
   return (
     <>
       {thesisProject && (
-        <section className="featured-thesis">
+        <section className="featured-thesis" id="master-project">
           <h2 className="project-section-title">Speciale</h2>
           <div className="featured-container">
             <ProjectCard project={thesisProject} featured key={thesisProject.title} />
@@ -40,10 +59,14 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
       )}
 
       {sortedSemesters.map((semester) => (
-        <section key={semester} className="semester-section">
+        <section
+          key={semester}
+          className="semester-section"
+          id={getSemesterAnchorId(semester)}
+        >
           <h2 className="project-section-title">{semester}</h2>
           <section
-            className={`project-grid${semester === "2. semester" ? " project-grid--semester-2" : ""}`}
+            className={`project-grid${semester === "9. semester" ? " project-grid--semester-9" : ""}`}
           >
             {projectsBySemester[semester].map((project) => (
               <ProjectCard project={project} key={project.title} />
