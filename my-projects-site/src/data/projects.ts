@@ -13,6 +13,17 @@ export const projects: Project[] = [
     isThesis: true,
     videoUrl: "https://www.youtube.com/watch?v=9PBrL9RHIj4",
   },
+    {
+    title: "Bright Bricks",
+    description: "Et produktkoncept bygget som en interaktiv weboplevelse.",
+    longDescription:
+      "s",
+    image: "/projects%20images/Kandidat_3_Semester/BrightBricksLogo.png",
+    semester: "3. semester",
+    course: "Social Technology Lab 3",
+    tags: ["Prototype", "UX"],
+    videoUrl: "https://www.youtube.com/watch?v=i4UW0CYIaH8",
+  },
   {
     title: "Stand Up!",
     description: "En prototype med fokus på minimalistisk UI og god brugeroplevelse.",
@@ -23,17 +34,6 @@ export const projects: Project[] = [
     course: "Physically interactive software",
     tags: ["Health Technology","Python","Arduino", "MediaPipe", "OpenCV"],
     videoUrl: "https://www.youtube.com/shorts/JCics3CiuGM",
-  },
-  {
-    title: "Bright Bricks",
-    description: "Et produktkoncept bygget som en interaktiv weboplevelse.",
-    longDescription:
-      "s",
-    image: "/projects%20images/Kandidat_3_Semester/BrightBricksLogo.png",
-    semester: "3. semester",
-    course: "Social Technology Lab 3",
-    tags: ["Prototype", "UX"],
-    videoUrl: "https://www.youtube.com/watch?v=i4UW0CYIaH8",
   },
   {
     title: "Tutorial for LEGO Digital Design Principles for Kids",
@@ -99,16 +99,17 @@ export const projects: Project[] = [
   },
 
   {
-    title: "1. Semester Project 1",
+    title: "VR Training in Man overboard Rescue",
     description: "Placeholder for 1st semester projects",
-    longDescription: "Add your 1st semester projects here",
-    image: "/projects/project-2.png",
+    longDescription: "The project was developed in collaboration with the Danish Home Guard to train their trainees in MOB procedures before going out to sea. The ship is scaled 1:1 with their real vessels, making the exercise feel as realistic as possible when they move around in the digital environment. This product does not replace their normal training, but prepares trainees for the first time they have to perform the procedure in practice, and may potentially be used as control-based learning. Feedback from the Danish Home Guard during testing: “I think it captures how quickly you lose track of where the person is in the water, and it is quite realistic that you cannot see through the ship to locate the person in the water.” They also mentioned that the product could have benefited from an introductory guide to make it easier to get started, and that the life ring was difficult to interact with during the exercise.",
+    image: "/projects%20images/Kandidat_1_Semester/VRTraining.png",
     semester: "1. semester",
-    course: "",
-    tags: [],
+    course: "Social Technology Lab 1",
+    tags: ["Tangible VR"],
+    videoUrl: "https://www.youtube.com/watch?v=-PA2lY_7wdI",
   },
   {
-    title: "1. Semester Project 2",
+    title: "Pentago",
     description: "Placeholder for 1st semester projects",
     longDescription: "Add your 1st semester projects here",
     image: "/projects/project-2.png",
