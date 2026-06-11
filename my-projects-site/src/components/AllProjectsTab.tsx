@@ -31,7 +31,7 @@ export function AllProjectsTab({ projects }: AllProjectsTabProps) {
   }, []);
 
   return (
-    <main className="page all-projects-tab">
+    <main className="page all-projects-tab" id="about">
       <p className="eyebrow">Project Archive</p>
       <h1 className="all-projects-title">All Projects</h1>
       <p className="all-projects-subtitle">
@@ -43,6 +43,20 @@ export function AllProjectsTab({ projects }: AllProjectsTabProps) {
       </a>
 
       <ProjectGrid projects={projects} />
+
+      <section className="all-projects-contact" id="contact">
+        <h2 className="project-section-title">Contact</h2>
+        <p>
+          You can contact me directly on LinkedIn.
+        </p>
+        <a
+          href="https://www.linkedin.com/in/albert-beck-07750b16a/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Open LinkedIn profile
+        </a>
+      </section>
     </main>
   );
 }

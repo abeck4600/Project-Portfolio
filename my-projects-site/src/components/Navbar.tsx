@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 export function Navbar() {
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement | null>(null);
+  const mainPortfolioHref = "/";
 
   useEffect(() => {
     function handleDocClick(e: MouseEvent) {
@@ -25,20 +26,28 @@ export function Navbar() {
   return (
     <header className="topbar">
       <div className="topbar-inner">
-        <a href="#" className="logo">
+        <a href={mainPortfolioHref} className="logo">
           AB
         </a>
 
         <nav className="nav">
-          <a href="#about">About me</a>
+          <a href="/#about">About me</a>
 
           <div
             className={`nav-dropdown${open ? " open" : ""}`}
             ref={dropdownRef}
           >
-            <button className="dropdown-trigger" onClick={toggleDropdown}>
-              Projects <span>▾</span>
-            </button>
+            <div className="dropdown-trigger-row">
+              <a href="/#highlighted-projects">Projects</a>
+              <button
+                className="dropdown-trigger"
+                onClick={toggleDropdown}
+                type="button"
+                aria-label="Toggle projects menu"
+              >
+                <span>▾</span>
+              </button>
+            </div>
 
             <div className="dropdown-menu two-column">
               <div className="dropdown-column">
@@ -61,7 +70,7 @@ export function Navbar() {
             </div>
           </div>
 
-          <a href="#contact">Contact</a>
+          <a href="/#contact">Contact</a>
 
           <a
             href="https://www.linkedin.com/in/albert-beck-07750b16a/"

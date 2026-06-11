@@ -66,10 +66,15 @@
   align-items: center;
 }
 
-.dropdown-trigger {
+.dropdown-trigger-row {
   display: flex;
   align-items: center;
   gap: 6px;
+}
+
+.dropdown-trigger {
+  display: flex;
+  align-items: center;
 }
 
 .dropdown-menu {
