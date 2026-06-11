@@ -9,25 +9,46 @@ type ProjectGridProps = {
 
 export function ProjectGrid({ projects }: ProjectGridProps) {
   const thesisProject = projects.find((project) => project.isThesis);
-  const remainingProjects = projects.filter((project) => !project.isThesis);
+  const otherProjects = projects.filter((project) => !project.isThesis);
+  
+  // Group projects by semester
+  const projectsBySemester = otherProjects.reduce(
+    (acc, project) => {
+      const semester = project.semester || "Other";
+      if (!acc[semester]) {
+        acc[semester] = [];
+      }
+      acc[semester].push(project);
+      return acc;
+    },
+    {} as Record<string, Project[]>
+  );
+
+  // Sort semesters in order
+  const semesterOrder = ["1. semester", "3. semester", "2. semester", "Other"];
+  const sortedSemesters = semesterOrder.filter((sem) => projectsBySemester[sem]);
 
   return (
     <>
       {thesisProject && (
         <section className="featured-thesis">
           <h2 className="project-section-title">Speciale</h2>
-          <ProjectCard project={thesisProject} featured key={thesisProject.title} />
+          <div className="featured-container">
+            <ProjectCard project={thesisProject} featured key={thesisProject.title} />
+          </div>
         </section>
       )}
 
-      <section>
-        <h2 className="project-section-title">Oevrige projekter</h2>
-        <section className="project-grid">
-          {remainingProjects.map((project) => (
-            <ProjectCard project={project} key={project.title} />
-          ))}
+      {sortedSemesters.map((semester) => (
+        <section key={semester} className="semester-section">
+          <h2 className="project-section-title">{semester}</h2>
+          <section className="project-grid">
+            {projectsBySemester[semester].map((project) => (
+              <ProjectCard project={project} key={project.title} />
+            ))}
+          </section>
         </section>
-      </section>
+      ))}
     </>
   );
 }

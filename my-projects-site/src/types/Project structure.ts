@@ -3,7 +3,9 @@ export type Project = {
   description: string;
   image: string;
   semester: string;
+  course?: string;
   tags?: string[];
   isThesis?: boolean;
   longDescription?: string;
+  videoUrl?: string;
 };

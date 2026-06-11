@@ -20,7 +20,7 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
 
       <div className="project-info">
         <div className="project-meta">
-          <span>{project.semester}</span>
+          {project.course && <span>{project.course}</span>}
         </div>
 
         {project.tags && (
@@ -35,20 +35,35 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
 
         <p>{project.description}</p>
 
-        {project.longDescription && (
-          <>
-            {isExpanded && (
-              <div className="expanded-content">
-                <p>{project.longDescription}</p>
-              </div>
+        {(project.longDescription || project.videoUrl) && (
+          <div className="project-actions">
+            {project.longDescription && (
+              <>
+                {isExpanded && (
+                  <div className="expanded-content">
+                    <p>{project.longDescription}</p>
+                  </div>
+                )}
+                <button
+                  className="read-more"
+                  onClick={() => setIsExpanded(!isExpanded)}
+                >
+                  {isExpanded ? "Show less" : "Read more"}
+                </button>
+              </>
             )}
-            <button
-              className="read-more"
-              onClick={() => setIsExpanded(!isExpanded)}
-            >
-              {isExpanded ? "Show less" : "Read more"}
-            </button>
-          </>
+
+            {project.videoUrl && (
+              <a
+                className="video-button"
+                href={project.videoUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Video
+              </a>
+            )}
+          </div>
         )}
       </div>
     </article>

@@ -1,18 +1,39 @@
 .featured-thesis {
   margin-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.featured-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.semester-section {
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 .project-section-title {
   margin: 0 0 16px;
   font-size: 1.2rem;
   letter-spacing: -0.02em;
+  width: 100%;
+  text-align: left;
 }
 
 .project-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
+  justify-content: center;
   gap: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .project-card {
@@ -37,13 +58,20 @@
   min-height: 0;
   border-color: #ffb07a;
   box-shadow: 0 16px 40px rgba(255, 122, 26, 0.18);
+  display: grid;
+  grid-template-columns: minmax(320px, 420px) minmax(0, 1fr);
+  align-items: stretch;
 }
 
 .project-card.featured .image-wrap {
-  height: 360px;
+  height: 100%;
+  min-height: 360px;
   background: linear-gradient(180deg, #fffaf5 0%, #ffffff 100%);
   position: relative;
   overflow: hidden;
+  place-items: center start;
+  border-bottom: 0;
+  border-right: 1px solid #eeeeee;
 }
 
 .project-card.featured .image-wrap::before {
@@ -59,6 +87,8 @@
 
 .project-card.featured .image-wrap img {
   transition: transform 300ms ease, filter 300ms ease;
+  width: min(82%, 480px);
+  object-position: left center;
 }
 
 .project-card.featured:hover .image-wrap img {
@@ -68,6 +98,11 @@
 
 .project-card.featured .project-info h2 {
   font-size: 1.35rem;
+}
+
+.project-card.featured .project-info {
+  justify-content: center;
+  padding: 32px 32px 32px 28px;
 }
 
 .image-wrap {
@@ -147,8 +182,15 @@
   line-height: 1.6;
 }
 
-.read-more {
+.project-actions {
   margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.read-more {
   width: fit-content;
   border: 0;
   border-radius: 999px;
@@ -166,6 +208,26 @@
   background: #ff8b35;
 }
 
+.video-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  border-radius: 999px;
+  padding: 11px 18px;
+  background: #111;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform 160ms ease, background 160ms ease;
+}
+
+.video-button:hover {
+  transform: translateY(-1px);
+  background: #2b2b2b;
+}
+
 @media (max-width: 1300px) {
   .project-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -181,12 +243,20 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .project-card.featured {
+    grid-template-columns: 1fr;
+  }
+
   .image-wrap {
     height: 260px;
   }
 
   .project-card.featured .image-wrap {
     height: 300px;
+  }
+
+  .project-card.featured .project-info {
+    padding: 24px;
   }
 }
 

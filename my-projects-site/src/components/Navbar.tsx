@@ -64,7 +64,7 @@ export function Navbar() {
           <a href="#contact">Contact</a>
 
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/albert-beck-07750b16a/"
             target="_blank"
             rel="noreferrer"
           >
