@@ -25,7 +25,7 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
   );
 
   // Sort semesters in order
-  const semesterOrder = ["1. semester", "3. semester", "2. semester", "Other"];
+  const semesterOrder = ["3. semester", "2. semester", "1. semester", "Other"];
   const sortedSemesters = semesterOrder.filter((sem) => projectsBySemester[sem]);
 
   return (
@@ -42,7 +42,9 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
       {sortedSemesters.map((semester) => (
         <section key={semester} className="semester-section">
           <h2 className="project-section-title">{semester}</h2>
-          <section className="project-grid">
+          <section
+            className={`project-grid${semester === "2. semester" ? " project-grid--semester-2" : ""}`}
+          >
             {projectsBySemester[semester].map((project) => (
               <ProjectCard project={project} key={project.title} />
             ))}

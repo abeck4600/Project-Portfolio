@@ -36,6 +36,13 @@
   margin: 0 auto;
 }
 
+.project-grid--semester-2 {
+  grid-template-columns: repeat(5, 320px);
+  justify-content: start;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
 .project-card {
   min-height: 540px;
   display: flex;
