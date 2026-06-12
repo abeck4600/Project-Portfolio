@@ -49,7 +49,7 @@ export function Navbar() {
               </button>
             </div>
 
-            <div className="dropdown-menu two-column">
+            <div className="dropdown-menu three-column">
               <div className="dropdown-column">
                 <h4>Master</h4>
                 <a href="/?view=all-projects#master-project">Master Project</a>
@@ -66,6 +66,13 @@ export function Navbar() {
                 <a href="/?view=all-projects#semester-3">Semester 3</a>
                 <a href="/?view=all-projects#semester-2">Semester 2</a>
                 <a href="/?view=all-projects#semester-1">Semester 1</a>
+              </div>
+
+              <div className="dropdown-column">
+                <h4>Company collaborations</h4>
+                <a href="/?view=all-projects#company-collaborations">
+                  View collaborations
+                </a>
               </div>
             </div>
           </div>

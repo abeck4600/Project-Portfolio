@@ -7,6 +7,8 @@ export type Project = {
   tags?: string[];
   isThesis?: boolean;
   isHighlighted?: boolean;
+  isCompanyCollaboration?: boolean;
+  isFeatured?: boolean;
   longDescription?: string;
   videoUrl?: string;
 };

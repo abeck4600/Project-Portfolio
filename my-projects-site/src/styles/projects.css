@@ -135,6 +135,7 @@
   padding: 28px;
   background: #fff;
   border-bottom: 1px solid #eeeeee;
+  overflow: hidden;
 }
 
 .image-wrap img {
@@ -296,6 +297,15 @@
 .all-projects-contact a {
   color: #111;
   font-weight: 800;
+}
+
+.company-collaborations-section {
+  margin-bottom: 48px;
+  scroll-margin-top: 92px;
+}
+
+.company-collaborations-grid {
+  margin-bottom: 8px;
 }
 
 .projects-archive-cta {

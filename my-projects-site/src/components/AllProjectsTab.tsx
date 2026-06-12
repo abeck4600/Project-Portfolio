@@ -2,6 +2,7 @@ import "../styles/projects.css";
 import { useEffect } from "react";
 
 import type { Project } from "../types/Project structure";
+import { CompanyCollaborations } from "./CompanyCollaborations";
 import { ProjectGrid } from "./ProjectGrid";
 
 type AllProjectsTabProps = {
@@ -41,6 +42,8 @@ export function AllProjectsTab({ projects }: AllProjectsTabProps) {
       <a className="all-projects-home-link" href="/">
         Return to main portfolio
       </a>
+
+      <CompanyCollaborations projects={projects} />
 
       <ProjectGrid projects={projects} />
 

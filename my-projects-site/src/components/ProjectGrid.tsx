@@ -69,7 +69,11 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
             className={`project-grid${semester === "9. semester" ? " project-grid--semester-9" : ""}`}
           >
             {projectsBySemester[semester].map((project) => (
-              <ProjectCard project={project} key={project.title} />
+              <ProjectCard
+                project={project}
+                featured={project.isFeatured}
+                key={project.title}
+              />
             ))}
           </section>
         </section>
