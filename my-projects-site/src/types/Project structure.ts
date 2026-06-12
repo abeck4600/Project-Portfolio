@@ -11,4 +11,5 @@ export type Project = {
   isFeatured?: boolean;
   longDescription?: string;
   videoUrl?: string;
+  articleUrl?: string;
 };

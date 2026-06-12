@@ -35,7 +35,7 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
 
         <p>{project.description}</p>
 
-        {(project.longDescription || project.videoUrl) && (
+        {(project.longDescription || project.videoUrl || project.articleUrl) && (
           <div className="project-actions">
             {project.longDescription && (
               <>
@@ -61,6 +61,17 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
                 rel="noreferrer"
               >
                 Video
+              </a>
+            )}
+
+            {project.articleUrl && (
+              <a
+                className="video-button"
+                href={project.articleUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Publication
               </a>
             )}
           </div>

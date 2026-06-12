@@ -9,7 +9,7 @@ type HighlightedProjectsProps = {
 
 export function HighlightedProjects({ projects }: HighlightedProjectsProps) {
   const highlightedProjects = projects.filter(
-    (project) => project.isHighlighted && !project.isThesis
+    (project) => project.isHighlighted
   );
 
   if (highlightedProjects.length === 0) {
