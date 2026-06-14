@@ -28,7 +28,7 @@ export function Navbar() {
     <header className="topbar">
       <div className="topbar-inner">
         <a href={mainPortfolioHref} className="logo">
-          AB
+          AAB
         </a>
 
         <nav className="nav">
