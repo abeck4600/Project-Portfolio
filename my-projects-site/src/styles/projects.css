@@ -564,10 +564,6 @@
     height: clamp(260px, 70vw, 340px);
   }
 
-  .page:not(.all-projects-tab) .image-wrap--compact {
-    height: clamp(180px, 52vw, 240px);
-  }
-
   .image-wrap img {
     object-fit: contain;
     object-position: center;
