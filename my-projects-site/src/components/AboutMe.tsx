@@ -7,7 +7,7 @@ export function AboutMe() {
         <div className="about-copy">
           <p className="about-kicker">About Me</p>
           <h2> MSc in Engineering </h2>
-            <h1>(Game Development and Learning Technology)</h1>
+            <h1>Game Development and Learning Technology</h1>
           <p>
             I am Albert, a curious and eager-to-learn person with a strong interest in software development, digital solutions, and interactive experiences that combine play, learning, and technology. I enjoy exploring new technologies and developing both professionally and personally. 
             I work in a structured way, take responsibility for solving challenges independently, and value collaboration with others.

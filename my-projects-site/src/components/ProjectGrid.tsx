@@ -2,6 +2,7 @@ import "../styles/projects.css";
 
 import type { Project } from "../types/Project structure";
 import { ProjectCard } from "./ProjectCard";
+import { ScrollableProjectsRow } from "./ScrollableProjectsRow";
 
 type ProjectGridProps = {
   projects: Project[];
@@ -65,17 +66,24 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
           id={getSemesterAnchorId(semester)}
         >
           <h2 className="project-section-title">{semester}</h2>
-          <section
-            className={`project-grid${semester === "9. semester" ? " project-grid--semester-9" : ""}`}
-          >
-            {projectsBySemester[semester].map((project) => (
-              <ProjectCard
-                project={project}
-                featured={project.isFeatured}
-                key={project.title}
-              />
-            ))}
-          </section>
+          {semester === "8. semester" ? (
+            <ScrollableProjectsRow
+              projects={projectsBySemester[semester]}
+              sectionLabel={semester}
+            />
+          ) : (
+            <section
+              className={`project-grid${semester === "9. semester" ? " project-grid--semester-9" : ""}`}
+            >
+              {projectsBySemester[semester].map((project) => (
+                <ProjectCard
+                  project={project}
+                  featured={project.isFeatured}
+                  key={project.title}
+                />
+              ))}
+            </section>
+          )}
         </section>
       ))}
     </>
