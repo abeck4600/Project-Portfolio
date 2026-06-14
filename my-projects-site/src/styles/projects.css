@@ -559,10 +559,19 @@
     background: #f5f5f5;
   }
 
+  .image-wrap--cover {
+    padding: 0;
+  }
+
   .image-wrap img {
     object-fit: contain;
     object-position: center;
     border-radius: 8px;
+  }
+
+  .image-wrap--cover img {
+    object-fit: cover;
+    border-radius: 0;
   }
 
   .project-card.featured .image-wrap {
