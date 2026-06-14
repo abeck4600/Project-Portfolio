@@ -561,6 +561,7 @@
 
   .image-wrap--cover {
     padding: 0;
+    height: clamp(260px, 70vw, 340px);
   }
 
   .image-wrap img {
@@ -570,9 +571,9 @@
   }
 
   .image-wrap--cover img {
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
-    border-radius: 8px;
+    border-radius: 0;
   }
 
   .project-card.featured .image-wrap {

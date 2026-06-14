@@ -10,6 +10,9 @@ type ProjectCardProps = {
 export function ProjectCard({ project, featured = false }: ProjectCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
   const imageWrapClass = project.imageMode === "cover" ? " image-wrap--cover" : "";
+  const imageStyle = project.mobileImagePosition
+    ? { objectPosition: project.mobileImagePosition }
+    : undefined;
 
   function getProjectAnchorId(title: string) {
     return title
@@ -24,7 +27,7 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
       id={getProjectAnchorId(project.title)}
     >
       <div className={`image-wrap${imageWrapClass}`}>
-        <img src={sitePath(project.image)} alt={project.title} />
+        <img src={sitePath(project.image)} alt={project.title} style={imageStyle} />
       </div>
 
       <div className="project-info">
