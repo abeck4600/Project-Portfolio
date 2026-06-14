@@ -1,6 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "dev": "npm --prefix my-projects-site run dev"
+    "dev": "npm --prefix my-projects-site run dev",
+    "build": "npm --prefix my-projects-site run build",
+    "preview": "npm --prefix my-projects-site run preview"
   }
 }

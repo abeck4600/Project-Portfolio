@@ -4,12 +4,18 @@ on:
   push:
     branches: [ main ]
 
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -25,9 +31,21 @@ jobs:
       - name: Build
         run: npm run build --prefix my-projects-site
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./my-projects-site/dist
+      - name: Publish built site to repository root
+        run: |
+          rm -rf assets "projects images" index.html favicon.svg .nojekyll
+          cp -R my-projects-site/dist/. .
+          if [ -f my-projects-site/dist/favicon.svg ]; then cp my-projects-site/dist/favicon.svg ./favicon.svg; fi
+          touch .nojekyll
+
+      - name: Commit deployment
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html assets "projects images" favicon.svg .nojekyll
+          if git diff --cached --quiet; then
+            echo "No deployment changes to commit."
+            exit 0
+          fi
+          git commit -m "Deploy site [skip ci]"
+          git push
