@@ -67,12 +67,12 @@ export const projects: Project[] = [
   },
   {
     title: "Blender 3D Modeling",
-    description: "Placeholder for 2nd semester projects",
-    longDescription: "Add your 2nd semester projects here",
-    image: "/projects/project-2.png",
+    description: "A Blender project where a rocket inspired by Tintin’s moon rocket is animated from launch to moon landing. The project focuses on dynamic movement, smoke and fire effects, shading, sculpting, and creating a complete animated 3D scene.",
+    longDescription: "Creating Dynamic 3D Objects is a Blender project focused on 3D animation, shading, sculpting, and dynamic effects. The scene follows a Tintin-inspired rocket from launch to moon landing, using the original three cylinders as engines and landing thrusters. The project included smoke and fire simulation, textured surfaces, sculpted moon craters, animated camera movement, and optimization challenges due to heavy rendering.",
+    image: "/projects%20images/Kandidat_2_Semester/Blender 3D modeling.png",
     semester: "8. semester",
-    course: "Creating dynamic 3D objects",
-    tags: ["Educational Video", "Design Principles", "LEGO"],
+    course: "Creating Dynamic 3D Objects",
+    tags: ["Blender", "3D Animation", "Shading", "Sculpting", "Keyframe Animation"],
     videoUrl: "https://www.youtube.com/watch?v=SpyfguSex3g",
   },
   {

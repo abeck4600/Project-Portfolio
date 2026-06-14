@@ -289,20 +289,20 @@
 .cert-button {
   display: inline-block;
   padding: 10px 16px;
-  background-color: #f4f4f4;
-  border: 1px solid #e0e0e0;
+  background-color: #9fc8e7;
+  border: 1px solid #86b9df;
   border-radius: 8px;
   font-size: 0.9rem;
   text-decoration: none;
-  color: #333;
+  color: #0f3f66;
   cursor: pointer;
   text-align: center;
   transition: background-color 150ms ease, border-color 150ms ease;
 }
 
 .cert-button:hover {
-  background-color: #e8e8e8;
-  border-color: #d0d0d0;
+  background-color: #b7d9f0;
+  border-color: #9fc8e7;
 }
 
 @media (max-width: 900px) {
