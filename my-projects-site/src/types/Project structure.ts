@@ -4,6 +4,7 @@ export type Project = {
   image: string;
   imageMode?: "contain" | "cover";
   mobileImagePosition?: string;
+  mobileImageFrame?: "standard" | "compact";
   semester: string;
   course?: string;
   tags?: string[];
