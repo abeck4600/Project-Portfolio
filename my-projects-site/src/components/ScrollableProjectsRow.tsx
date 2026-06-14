@@ -51,6 +51,12 @@ export function ScrollableProjectsRow({
 
   return (
     <div className="project-carousel-wrapper">
+      {hasOverflow && (
+        <p className="carousel-swipe-hint" aria-hidden="true">
+          Swipe for at se flere projekter -&gt;
+        </p>
+      )}
+
       <div className="project-carousel" aria-label={`${sectionLabel} carousel`}>
         <button
           className="carousel-nav carousel-nav--left"
@@ -82,12 +88,6 @@ export function ScrollableProjectsRow({
           &#8250;
         </button>
       </div>
-
-      {hasOverflow && (
-        <p className="carousel-swipe-hint" aria-hidden="true">
-          Swipe for at se flere projekter -&gt;
-        </p>
-      )}
     </div>
   );
 }
