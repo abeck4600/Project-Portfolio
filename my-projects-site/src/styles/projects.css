@@ -559,7 +559,7 @@
     background: #f5f5f5;
   }
 
-  .image-wrap--cover {
+  .page:not(.all-projects-tab) .image-wrap--cover {
     padding: 0;
     height: clamp(260px, 70vw, 340px);
   }
@@ -570,7 +570,7 @@
     border-radius: 8px;
   }
 
-  .image-wrap--cover img {
+  .page:not(.all-projects-tab) .image-wrap--cover img {
     object-fit: cover;
     object-position: center;
     border-radius: 0;
