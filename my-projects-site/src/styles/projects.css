@@ -570,8 +570,9 @@
   }
 
   .image-wrap--cover img {
-    object-fit: cover;
-    border-radius: 0;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 8px;
   }
 
   .project-card.featured .image-wrap {
