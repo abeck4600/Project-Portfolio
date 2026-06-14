@@ -50,12 +50,12 @@
 }
 
 .hero-subtitle {
-  margin: 26px 0 0;
-  max-width: 720px;
-  font-size: clamp(1.2rem, 1.7vw, 1.7rem);
-  line-height: 1.4;
+  margin: 18px 0 0;
+  max-width: 45ch;
+  font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+  line-height: 1.5;
   font-weight: 700;
-  color: #f3f3f3;
+  color: rgba(243,243,243,0.95);
 }
 
 .hero-right {

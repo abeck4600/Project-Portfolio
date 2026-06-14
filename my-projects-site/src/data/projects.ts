@@ -137,7 +137,7 @@ export const projects: Project[] = [
     course: "Human-Robot Interaction",
     tags: ["Human-Robot Interaction", "In-the-Wild Study", "Social Robotics"],
     isHighlighted: true,
-    articleUrl: "https://ieeexplore-ieee-org.proxy1-bib.sdu.dk/document/10974219",
+    articleUrl: "https://ieeexplore.ieee.org/document/10974219",
   },
   {
     title: "Tangible fantasies",

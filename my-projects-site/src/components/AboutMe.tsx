@@ -6,12 +6,12 @@ export function AboutMe() {
       <div className="about-content">
         <div className="about-copy">
           <p className="about-kicker">About Me</p>
-          <h2> MSc in Engineering (Game Development and Learning Technology)</h2>
+          <h2> MSc in Engineering </h2>
+            <h1>(Game Development and Learning Technology)</h1>
           <p>
-            I am Albert Beck, an MSc student in Engineering with a focus on Game
-            Development and Learning Technology. I build interactive experiences
-            that combine play, learning, and technology, with an emphasis on
-            making complex ideas feel clear, engaging, and easy to explore.
+            I am Albert, a curious and eager-to-learn person with a strong interest in software development, digital solutions, and interactive experiences that combine play, learning, and technology. I enjoy exploring new technologies and developing both professionally and personally. 
+            I work in a structured way, take responsibility for solving challenges independently, and value collaboration with others.
+            I am positive, engaged, and focused on making complex ideas clear, engaging, and easy to explore. I would like to contribute to a social and collaborative team with a focus on quality, knowledge sharing, and strong solutions.
           </p>
         </div>
 

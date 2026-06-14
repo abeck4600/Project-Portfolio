@@ -12,8 +12,7 @@ export function Hero() {
           </h1>
 
           <p className="hero-subtitle">
-            This is my project portfolio.
-            With project development spanning across my bachelor and master study.
+            This is my project portfolio, showcasing work from my bachelor's and master's studies.
           </p>
         </div>
 

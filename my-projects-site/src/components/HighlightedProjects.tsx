@@ -19,11 +19,16 @@ export function HighlightedProjects({ projects }: HighlightedProjectsProps) {
   return (
     <section className="highlighted-section" id="highlighted-projects">
       <h2 className="project-section-title">Highlighted Projects</h2>
-      <section className="project-grid highlighted-grid">
-        {highlightedProjects.map((project) => (
-          <ProjectCard project={project} key={project.title} />
-        ))}
-      </section>
+      <div className="highlighted-content">
+        <section className="project-grid highlighted-grid">
+          {highlightedProjects.map((project) => (
+            <ProjectCard project={project} key={project.title} />
+          ))}
+        </section>
+        <a className="show-all-projects-button" href="./?view=all-projects">
+          Show all projects
+        </a>
+      </div>
     </section>
   );
 }

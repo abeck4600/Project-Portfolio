@@ -39,7 +39,7 @@ export function AllProjectsTab({ projects }: AllProjectsTabProps) {
         This tab shows all projects in the same structure as the main portfolio.
       </p>
       <p className="all-projects-count">Total projects: {projects.length}</p>
-      <a className="all-projects-home-link" href="/">
+      <a className="all-projects-home-link" href="./">
         Return to main portfolio
       </a>
 

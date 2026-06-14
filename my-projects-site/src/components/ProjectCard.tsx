@@ -9,10 +9,17 @@ type ProjectCardProps = {
 export function ProjectCard({ project, featured = false }: ProjectCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
+  function getProjectAnchorId(title: string) {
+    return title
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
+  }
+
   return (
     <article
       className={`project-card${featured ? " featured" : ""}`}
-      id={project.semester.toLowerCase().replace(". ", "-")}
+      id={getProjectAnchorId(project.title)}
     >
       <div className="image-wrap">
         <img src={project.image} alt={project.title} />
