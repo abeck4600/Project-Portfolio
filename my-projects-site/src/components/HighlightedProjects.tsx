@@ -2,6 +2,7 @@ import "../styles/projects.css";
 
 import type { Project } from "../types/Project structure";
 import { ProjectCard } from "./ProjectCard";
+import { sitePath } from "../utils/sitePath";
 
 type HighlightedProjectsProps = {
   projects: Project[];
@@ -25,7 +26,7 @@ export function HighlightedProjects({ projects }: HighlightedProjectsProps) {
             <ProjectCard project={project} key={project.title} />
           ))}
         </section>
-        <a className="show-all-projects-button" href="./?view=all-projects">
+        <a className="show-all-projects-button" href={sitePath("?view=all-projects")}>
           Show all projects
         </a>
       </div>

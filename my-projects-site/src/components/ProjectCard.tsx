@@ -1,5 +1,6 @@
 import { useState } from "react";
 import type { Project } from "../types/Project structure";
+import { sitePath } from "../utils/sitePath";
 
 type ProjectCardProps = {
   project: Project;
@@ -22,7 +23,7 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
       id={getProjectAnchorId(project.title)}
     >
       <div className="image-wrap">
-        <img src={project.image} alt={project.title} />
+        <img src={sitePath(project.image)} alt={project.title} />
       </div>
 
       <div className="project-info">

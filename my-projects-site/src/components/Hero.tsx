@@ -1,4 +1,5 @@
 import "../styles/hero.css";
+import { sitePath } from "../utils/sitePath";
 
 export function Hero() {
   return (
@@ -19,7 +20,7 @@ export function Hero() {
         <div className="hero-right">
           <div className="hero-large-image">
             <img
-              src="/projects%20images/Albert_Black_bg.png"
+              src={sitePath("/projects%20images/Albert_Black_bg.png")}
               alt="Albert Beck portrait on black background"
             />
           </div>

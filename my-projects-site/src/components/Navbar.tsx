@@ -1,10 +1,11 @@
 import "../styles/navbar.css";
 import { useEffect, useRef, useState } from "react";
+import { sitePath } from "../utils/sitePath";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement | null>(null);
-  const mainPortfolioHref = "/";
+  const mainPortfolioHref = sitePath("/");
 
   useEffect(() => {
     function handleDocClick(e: MouseEvent) {
@@ -31,14 +32,14 @@ export function Navbar() {
         </a>
 
         <nav className="nav">
-          <a href="/#about">About me</a>
+          <a href={sitePath("/#about")}>About me</a>
 
           <div
             className={`nav-dropdown${open ? " open" : ""}`}
             ref={dropdownRef}
           >
             <div className="dropdown-trigger-row">
-              <a href="/#highlighted-projects">Projects</a>
+              <a href={sitePath("/#highlighted-projects")}>Projects</a>
               <button
                 className="dropdown-trigger"
                 onClick={toggleDropdown}
@@ -52,25 +53,25 @@ export function Navbar() {
             <div className="dropdown-menu three-column">
               <div className="dropdown-column">
                 <h4>Master</h4>
-                <a href="/?view=all-projects#master-project">Master Project</a>
-                <a href="/?view=all-projects#semester-9">Semester 3</a>
-                <a href="/?view=all-projects#semester-8">Semester 2</a>
-                <a href="/?view=all-projects#semester-7">Semester 1</a>
+                <a href={sitePath("/?view=all-projects#master-project")}>Master Project</a>
+                <a href={sitePath("/?view=all-projects#semester-9")}>Semester 3</a>
+                <a href={sitePath("/?view=all-projects#semester-8")}>Semester 2</a>
+                <a href={sitePath("/?view=all-projects#semester-7")}>Semester 1</a>
               </div>
 
               <div className="dropdown-column">
                 <h4>Bachelor</h4>
-                <a href="/?view=all-projects#semester-6">Bachelor Project</a>
-                <a href="/?view=all-projects#semester-5">Semester 5</a>
-                <a href="/?view=all-projects#semester-4">Semester 4</a>
-                <a href="/?view=all-projects#semester-3">Semester 3</a>
-                <a href="/?view=all-projects#semester-2">Semester 2</a>
-                <a href="/?view=all-projects#semester-1">Semester 1</a>
+                <a href={sitePath("/?view=all-projects#semester-6")}>Bachelor Project</a>
+                <a href={sitePath("/?view=all-projects#semester-5")}>Semester 5</a>
+                <a href={sitePath("/?view=all-projects#semester-4")}>Semester 4</a>
+                <a href={sitePath("/?view=all-projects#semester-3")}>Semester 3</a>
+                <a href={sitePath("/?view=all-projects#semester-2")}>Semester 2</a>
+                <a href={sitePath("/?view=all-projects#semester-1")}>Semester 1</a>
               </div>
 
               <div className="dropdown-column">
                 <h4>Company collaborations</h4>
-                <a href="/?view=all-projects#company-collaborations">
+                <a href={sitePath("/?view=all-projects#company-collaborations")}>
                   View collaborations
                 </a>
               </div>
