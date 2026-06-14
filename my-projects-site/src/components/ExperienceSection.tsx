@@ -4,7 +4,7 @@ export function ExperienceSection() {
   const experiences = [
     {
       role: "Mentor E23 & E24",
-      company: "Syddansk Universitet, Odense",
+      company: "University of Southern Denmark, Odense",
       period: "Apr 2023 - Maj 2025",
       statementUrl: "",
       bullets: [

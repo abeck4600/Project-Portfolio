@@ -545,7 +545,8 @@
   }
 
   .image-wrap img {
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
     border-radius: 8px;
   }
 
@@ -555,7 +556,7 @@
 
   .project-card.featured .image-wrap img {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
   }
 
