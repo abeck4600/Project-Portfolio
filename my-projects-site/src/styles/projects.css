@@ -59,6 +59,11 @@
   justify-content: center;
 }
 
+.featured-container--narrow {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 .semester-section {
   margin-bottom: 48px;
   display: flex;
@@ -116,8 +121,8 @@
 
 .project-card.featured {
   min-height: 0;
-  border-color: #ffb07a;
-  box-shadow: 0 16px 40px rgba(255, 122, 26, 0.18);
+  border-color: #dedede;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
   display: grid;
   grid-template-columns: minmax(320px, 420px) minmax(0, 1fr);
   align-items: stretch;
@@ -125,13 +130,14 @@
 
 .project-card.featured .image-wrap {
   height: 100%;
-  min-height: 360px;
-  background: linear-gradient(180deg, #fffaf5 0%, #ffffff 100%);
+  min-height: 420px;
+  background: #ffffff;
   position: relative;
   overflow: hidden;
   place-items: center;
   border-bottom: 0;
   border-right: 1px solid #eeeeee;
+  padding: 20px;
 }
 
 .project-card.featured .image-wrap::before {
@@ -141,19 +147,22 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(255, 122, 26, 0.05) 0%, transparent 100%);
+  background: transparent;
   pointer-events: none;
 }
 
 .project-card.featured .image-wrap img {
   transition: transform 300ms ease, filter 300ms ease;
-  width: min(82%, 480px);
+  width: min(92%, 640px);
+  max-width: 640px;
+  height: auto;
+  object-fit: contain;
   object-position: center;
 }
 
 .project-card.featured:hover .image-wrap img {
-  transform: scale(1.05);
-  filter: brightness(1.08);
+  transform: scale(1.03);
+  filter: brightness(1.02);
 }
 
 .project-card.featured .project-info h2 {
@@ -320,7 +329,8 @@
 }
 
 .all-projects-tab {
-  max-width: 1480px;
+  width: 100%;
+  max-width: none;
 }
 
 .all-projects-title {
@@ -349,21 +359,27 @@
 }
 
 .all-projects-contact {
-  margin-top: 40px;
-  padding: 22px;
-  border: 1px solid #dedede;
-  border-radius: 18px;
-  background: #ffffff;
+  margin-top: 96px;
+  padding: 56px;
+  background: #111;
+  color: #fff;
+  border-radius: 28px;
+}
+
+.all-projects-contact .eyebrow {
+  color: #aaa;
+}
+
+.all-projects-contact h2 {
+  margin: 0 0 16px;
+  font-size: clamp(2rem, 5vw, 4rem);
+  letter-spacing: -0.06em;
 }
 
 .all-projects-contact p {
-  margin: 0 0 14px;
-  color: #555;
-}
-
-.all-projects-contact a {
-  color: #111;
-  font-weight: 800;
+  max-width: 560px;
+  color: #d6d6d6;
+  line-height: 1.6;
 }
 
 .company-collaborations-section {
@@ -492,6 +508,11 @@
   .project-card.featured .project-info {
     padding: 24px;
   }
+
+  .all-projects-contact {
+    margin-top: 64px;
+    padding: 32px;
+  }
 }
 
 @media (max-width: 620px) {
@@ -571,5 +592,11 @@
   .project-grid--scrollable .project-info > p {
     -webkit-line-clamp: 4;
     min-height: 6em;
+  }
+
+  .all-projects-contact {
+    margin-left: 0;
+    width: auto;
+    padding: 32px;
   }
 }

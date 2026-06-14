@@ -77,7 +77,7 @@ export function Navbar() {
             </div>
           </div>
 
-          <a href="/#contact">Contact</a>
+          <a href="mailto:a-beck@live.dk">Mail</a>
 
           <a
             href="https://www.linkedin.com/in/albert-beck-07750b16a/"

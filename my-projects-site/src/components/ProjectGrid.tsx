@@ -10,6 +10,7 @@ type ProjectGridProps = {
 
 export function ProjectGrid({ projects }: ProjectGridProps) {
   const thesisProject = projects.find((project) => project.isThesis);
+  const bachelorProject = projects.find((project) => project.course === "Bachelor project");
   const otherProjects = projects.filter((project) => !project.isThesis);
 
   function getSemesterAnchorId(semester: string) {
@@ -53,11 +54,13 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
       {thesisProject && (
         <section className="featured-thesis" id="master-project">
           <h2 className="project-section-title">Speciale</h2>
-          <div className="featured-container">
+          <div className="featured-container featured-container--narrow">
             <ProjectCard project={thesisProject} featured key={thesisProject.title} />
           </div>
         </section>
       )}
+
+      {/* Bachelor project will be rendered inside 6. semester below */}
 
       {sortedSemesters.map((semester) => (
         <section
@@ -72,17 +75,27 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
               sectionLabel={semester}
             />
           ) : (
-            <section
-              className={`project-grid${semester === "9. semester" ? " project-grid--semester-9" : ""}`}
-            >
-              {projectsBySemester[semester].map((project) => (
-                <ProjectCard
-                  project={project}
-                  featured={project.isFeatured}
-                  key={project.title}
-                />
-              ))}
-            </section>
+            <>
+              {semester === "6. semester" && bachelorProject && (
+                <div className="featured-container featured-container--narrow">
+                  <ProjectCard project={bachelorProject} featured key={bachelorProject.title} />
+                </div>
+              )}
+
+              <section
+                className={`project-grid${semester === "9. semester" ? " project-grid--semester-9" : ""}`}
+              >
+                {projectsBySemester[semester]
+                  .filter((p) => p.title !== bachelorProject?.title)
+                  .map((project) => (
+                    <ProjectCard
+                      project={project}
+                      featured={project.isFeatured}
+                      key={project.title}
+                    />
+                  ))}
+              </section>
+            </>
           )}
         </section>
       ))}
