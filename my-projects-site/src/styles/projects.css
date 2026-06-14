@@ -522,6 +522,21 @@
 
   .project-grid--scrollable {
     grid-auto-columns: 100%;
+    align-items: start;
+  }
+
+  .project-grid--scrollable .project-card {
+    height: auto;
+  }
+
+  .project-grid--scrollable .project-meta,
+  .project-grid--scrollable .tags,
+  .project-grid--scrollable .project-info > p {
+    min-height: 0;
+  }
+
+  .project-grid--scrollable .project-info > p {
+    -webkit-line-clamp: 6;
   }
 
   .project-card {
@@ -552,6 +567,7 @@
 
   .project-card.featured .image-wrap {
     height: 220px;
+    min-height: 0;
   }
 
   .project-card.featured .image-wrap img {
