@@ -9,6 +9,8 @@ import { HighlightedProjects } from "./components/HighlightedProjects";
 import { AllProjectsTab } from "./components/AllProjectsTab";
 import { Contact } from "./components/Contact";
 import { ExperienceSection } from "./components/ExperienceSection";
+import { CertificatesSection } from "./components/CertificatesSection";
+import { RecommendationsSection } from "./components/RecommendationsSection";
 
 import { projects } from "./data/projects";
 
@@ -58,6 +60,10 @@ export default function App() {
         <HighlightedProjects projects={projects} />
 
         <ExperienceSection />
+
+        <CertificatesSection />
+
+        <RecommendationsSection />
 
         <Contact />
       </main>

@@ -5,10 +5,10 @@ export function Contact() {
     <section className="contact" id="contact">
       <p className="eyebrow">Contact</p>
 
-      <h2>Skal vi tage en snak?</h2>
+      <h2>Should we have a talk?</h2>
 
       <p>
-        Du kan kontakte mig via LinkedIn eller sende mig en besked på mail.
+        You can contact me via LinkedIn or send me a message by email.
       </p>
     </section>
   );

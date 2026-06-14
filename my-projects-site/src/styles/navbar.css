@@ -3,7 +3,7 @@
   top: 0;
   z-index: 1000;
   width: 100%;
-  background: #287db6;
+  background: #dbbb07;
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 
@@ -42,7 +42,7 @@
 
 .nav a,
 .dropdown-trigger {
-  color: #111;
+  color: #ffffff;
   text-decoration: none;
   background: transparent;
   border: 0;
