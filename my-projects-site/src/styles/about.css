@@ -41,6 +41,7 @@
 .about-notes {
   display: grid;
   gap: 16px;
+  padding-top: 96px;
 }
 
 .about-notes div {
@@ -75,6 +76,10 @@
 
   .about-content {
     grid-template-columns: 1fr;
+  }
+
+  .about-notes {
+    padding-top: 0;
   }
 }
 

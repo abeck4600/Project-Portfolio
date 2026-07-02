@@ -9,24 +9,22 @@ export function AboutMe() {
           <h2> MSc in Engineering </h2>
             <h1>Game Development and Learning Technology</h1>
           <p>
-            I am Albert, a curious and eager-to-learn person with a strong interest in software development, digital solutions, and interactive experiences that combine play, learning, and technology. I enjoy exploring new technologies and developing both professionally and personally. 
-            I work in a structured way, take responsibility for solving challenges independently, and value collaboration with others.
-            I am positive, engaged, and focused on making complex ideas clear, engaging, and easy to explore. I would like to contribute to a social and collaborative team with a focus on quality, knowledge sharing, and strong solutions.
+            I am Albert, a curious and eager-to-learn person with a strong interest in software development and digital solutions. I enjoy creating intuitive, user-friendly experiences and exploring new technologies and complex problems. I work in a structured way, take responsibility, and independently investigate how to approach and solve tasks. At the same time, I value professional sparring and collaboration with others. As a person, I am positive, creative, patient, and persistent. I care about creating clarity, understanding needs, and contributing to well-considered solutions. I see myself as a team player who enjoys being part of a collaborative and social team focused on quality and knowledge sharing.
           </p>
         </div>
 
         <div className="about-notes">
           <div>
             <span>Focus</span>
-            <p>Designing playful learning experiences that feel meaningful and usable.</p>
+            <p>Building user-centered digital solutions with a focus on software development, interaction design, and learning technology.</p>
           </div>
           <div>
             <span>Tools</span>
-            <p>Unity, C#, VR/AR, prototyping, and cross-disciplinary development.</p>
+            <p>Unity, C#, VR/AR, Angular, TypeScript, JavaScript, Git, GitHub, prototyping, wireframes, flowcharts, and user testing.</p>
           </div>
           <div>
             <span>Goal</span>
-            <p>Create technology that helps people learn, collaborate, and explore.</p>
+            <p>Create clear and practical solutions that create value, support collaboration, and make complex ideas easier to explore and understand.</p>
           </div>
         </div>
       </div>
