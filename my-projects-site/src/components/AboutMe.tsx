@@ -9,7 +9,9 @@ export function AboutMe() {
           <h2> MSc in Engineering </h2>
             <h1>Game Development and Learning Technology</h1>
           <p>
-            I am Albert, a curious and eager-to-learn person with a strong interest in software development and digital solutions. I enjoy creating intuitive, user-friendly experiences and exploring new technologies and complex problems. I work in a structured way, take responsibility, and independently investigate how to approach and solve tasks. At the same time, I value professional sparring and collaboration with others. As a person, I am positive, creative, patient, and persistent. I care about creating clarity, understanding needs, and contributing to well-considered solutions. I see myself as a team player who enjoys being part of a collaborative and social team focused on quality and knowledge sharing.
+            I am Albert, a curious and eager-to-learn person with a strong interest in software development and digital solutions. I enjoy creating intuitive, user-friendly experiences and exploring new technologies and complex problems. I work in a structured way, take responsibility, and independently investigate how to approach and solve tasks. At the same time, I value professional sparring and collaboration with others.
+            <br />
+            As a person, I am positive, creative, patient, and persistent. I care about creating clarity, understanding needs, and contributing to well-considered solutions. I see myself as a team player who enjoys being part of a collaborative and social team focused on quality and knowledge sharing.
           </p>
         </div>
 
@@ -20,11 +22,11 @@ export function AboutMe() {
           </div>
           <div>
             <span>Tools</span>
-            <p>Unity, C#, VR/AR, Angular, TypeScript, JavaScript, Git, GitHub, prototyping, wireframes, flowcharts, and user testing.</p>
+            <p>Unity, C#, Python, TypeScript, JavaScript, PHP, Angular, React, Git, GitHub, VR/AR and Miro.</p>
           </div>
           <div>
             <span>Goal</span>
-            <p>Create clear and practical solutions that create value, support collaboration, and make complex ideas easier to explore and understand.</p>
+            <p>Create solutions that can create value, support collaboration, and make ideas easier to explore and understand.</p>
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@
   width: 100%;
   background: #f7f7f5;
   color: #111;
-  padding: 96px clamp(24px, 4vw, 64px) 88px;
+  padding: 96px clamp(24px, 4vw, 64px) 56px;
 }
 
 .about-content {
@@ -41,7 +41,7 @@
 .about-notes {
   display: grid;
   gap: 16px;
-  padding-top: 96px;
+  padding-top: 40px;
 }
 
 .about-notes div {
