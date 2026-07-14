@@ -20,7 +20,7 @@ export function Hero() {
         <div className="hero-right">
           <div className="hero-large-image">
             <img
-              src={sitePath("/projects%20images/Albert_Black_bg.png")}
+              src={sitePath("/projects%20images/AlbertBeck_Black_BG.png")}
               alt="Albert Beck portrait on black background"
             />
           </div>
