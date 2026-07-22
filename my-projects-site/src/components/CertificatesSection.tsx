@@ -15,7 +15,7 @@ export function CertificatesSection() {
     {
       title: "Project Management Certificate (IDA)",
       text: "Completed project management course at IDA",
-      imageUrls: ["https://www.dropbox.com/scl/fi/qtndh0y097qtvvxzz5m0y/Bevis-Projektledelse-IDA-uden-CPR.pdf?rlkey=egmm0908nv2let4lrfyjjbi9l&st=mepizph8&dl=0"],
+      imageUrls: ["https://www.dropbox.com/scl/fi/uw7he0jys6t1xr2aa8mq9/Bevis-Projektledelse-IDA.pdf?rlkey=cqxl9nh5v5o805l2iheht5dqw&st=x781mx11&dl=0"],
     },
     {
       title: "DIF trainer 1, Strength Training",

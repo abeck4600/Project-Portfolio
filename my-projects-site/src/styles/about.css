@@ -30,12 +30,16 @@
   color: #666;
 }
 
-.about-copy p:last-child {
+.about-copy > p:not(.about-kicker) {
   margin: 22px 0 0;
   max-width: 680px;
   font-size: clamp(1.05rem, 1.6vw, 1.3rem);
   line-height: 1.8;
   color: #333;
+}
+
+.about-copy > p:not(.about-kicker) + p:not(.about-kicker) {
+  margin-top: 14px;
 }
 
 .about-notes {

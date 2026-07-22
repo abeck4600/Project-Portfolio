@@ -12,6 +12,8 @@ export type Project = {
   isCompanyCollaboration?: boolean;
   isFeatured?: boolean;
   longDescription?: string;
+  readMoreUrl?: string;
+  readMoreLabel?: string;
   videoUrl?: string;
   articleUrl?: string;
 };

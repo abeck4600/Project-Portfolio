@@ -9,6 +9,7 @@ type ProjectCardProps = {
 
 export function ProjectCard({ project, featured = false }: ProjectCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
+  const readMoreUrl = project.readMoreUrl;
   const imageWrapClass = project.imageMode === "cover" ? " image-wrap--cover" : "";
   const imageStyle = project.mobileImagePosition
     ? { objectPosition: project.mobileImagePosition }
@@ -47,8 +48,18 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
 
         <p>{project.description}</p>
 
-        {(project.longDescription || project.videoUrl || project.articleUrl) && (
+        {(project.longDescription || readMoreUrl || project.videoUrl || project.articleUrl) && (
           <div className="project-actions">
+            {readMoreUrl && (
+              <button
+                className="read-more read-more--document"
+                type="button"
+                onClick={() => window.open(sitePath(readMoreUrl), "_blank", "noopener,noreferrer")}
+              >
+                {project.readMoreLabel ?? "Fast Project overview image"}
+              </button>
+            )}
+
             {project.longDescription && (
               <>
                 {isExpanded && (
