@@ -8,14 +8,19 @@ export function CertificatesSection() {
       imageUrls: ["https://www.dropbox.com/scl/fi/jxiq2v8nsydqanvn9a037/Mentorbevis-Albert-Beck-2023.pdf?rlkey=twmduzurrkli4lcqygvuge7ug&st=msyi3l45&dl=0"],
     },
     {
-      title: "Swedish Course Certificate",
-      text: "Completed course certificate from Sweden",
-      imageUrls: ["https://www.dropbox.com/scl/fi/xx3kvqzn94j4cjkq1hbee/Kursbevis-Albert-Allermann-Beck.pdf?rlkey=dl0c3wy8cxl1m8f30nk9r8v1z&st=5tikq03p&dl=0",],
+      title: "LEGO Foundation:Introduction to the Learning Through Play Experience Tool",
+      text: "Certificate of achievement",
+      imageUrls: ["https://www.dropbox.com/scl/fi/74ladxxfh6shedho9qhah/introduction-to-the-learning-through-play-experience-tool_certificate_of_achievement_il6wtcv.pdf?rlkey=crfbsw7ytpr9ru1fddh881nst&st=7796d86d&dl=0"],
     },
     {
       title: "Project Management Certificate (IDA)",
       text: "Completed project management course at IDA",
       imageUrls: ["https://www.dropbox.com/scl/fi/uw7he0jys6t1xr2aa8mq9/Bevis-Projektledelse-IDA.pdf?rlkey=cqxl9nh5v5o805l2iheht5dqw&st=x781mx11&dl=0"],
+    },
+    {
+      title: "Swedish Course Certificate",
+      text: "Completed course certificate from Sweden",
+      imageUrls: ["https://www.dropbox.com/scl/fi/xx3kvqzn94j4cjkq1hbee/Kursbevis-Albert-Allermann-Beck.pdf?rlkey=dl0c3wy8cxl1m8f30nk9r8v1z&st=5tikq03p&dl=0",],
     },
     {
       title: "DIF trainer 1, Strength Training",
