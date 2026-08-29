@@ -29,7 +29,7 @@ export function AboutMe() {
           </div>
           <div>
             <span>Tools</span>
-            <p>Unity, C#, Python, TypeScript, JavaScript, PHP, Angular, RStudio, React, Git, GitHub, VR/AR, Miro and Twine.</p>
+            <p>Unity, C#, Python, TypeScript, JavaScript, PHP, Angular, RStudio, Fusion360, React, Git, GitHub, VR/AR, Miro and Twine.</p>
           </div>
           <div>
             <span>Goal</span>
