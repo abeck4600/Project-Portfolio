@@ -18,6 +18,9 @@ export function AboutMe() {
             My background in Game Development and Learning Technology combines technical development with user-centered design, play, and learning. I work in a structured way, value close collaboration, and like helping make complex ideas clear and tangible.
           </p>
           <p>
+            Most recently, I worked as a consultant at the LEGO Group, building interactive prototypes and running play sessions with children and families.
+          </p>
+          <p>
             I hope to contribute curiosity, creativity, and technical perspective to a team and help develop thoughtful solutions that create value.
           </p>
         </div>

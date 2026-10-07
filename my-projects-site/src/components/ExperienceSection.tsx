@@ -3,29 +3,40 @@ import "../styles/experiences.css";
 export function ExperienceSection() {
   const experiences = [
     {
+      role: "Consultant",
+      company: "The LEGO Group - DCE Strategic Design and Research, Billund",
+      period: "2025 - 2026",
+      bullets: [
+        "Planned and ran eight play sessions with children and families to test and refine early-stage play concepts and prototypes.",
+        "Built interactive prototypes to explore and test play concepts with children and parents.",
+        "Worked closely with design strategists and behavioural researchers, turning observations into concrete design recommendations.",
+        "Presented prototypes and findings to designers, researchers, and senior design leadership.",
+      ],
+    },
+    {
       role: "Mentor E23 & E24",
       company: "University of Southern Denmark, Odense",
-      period: "Apr 2023 - Maj 2025",
+      period: "Apr 2023 - May 2025",
       statementUrl: "",
       bullets: [
-        "Mentor for the new engineering students on the Game Development and Learning Technology programme.",
-        "Planned and led the introduction week and the class sessions with a focus on wellbeing, academic introduction, and social integration.",
+        "Planned and ran introductory activities and recurring class sessions for new engineering students in Game Development and Learning Technology, in collaboration with program coordinators.",
+        "Focused on wellbeing, academic introduction, and social integration, and completed mentor training in team psychology, conflict resolution, communication, and group leadership.",
       ],
     },
     {
       role: "Robot Summer Camp 2023 & 2024 (Seasonal work)",
-      company: "Teknologiskolen",
+      company: "Teknologiskolen, Odense",
       period: "Jul 2023 - Jul 2024",
       bullets: [
         "Helped children and young people aged 6-16 with technology, robotics, and creative problem-solving.",
-        "Communicated technical topics in an age-appropriate and engaging way.",
+        "Explained technical topics so everyone could take part.",
       ],
     },
     {
       role: "Esports Coach",
       company: "Køge Nord Esport",
       period: "Dec 2018 - Jul 2020",
-      bullets: ["Taught children and young people esports."],
+      bullets: ["Planned and ran training sessions for children and young people twice a week."],
     },
     {
       role: "Distributor",
@@ -42,7 +53,7 @@ export function ExperienceSection() {
         "University of Southern Denmark, Mærsk Mc-Kinney Møller Institute",
       bullets: [
         "Thesis: Play, Build, and Talk: Supporting Playful Parent-Child Interaction Through Digital Co-Play.",
-        "Developed a digital co-play prototype in collaboration with The LEGO Group with a focus on parent-child interactions, LEGO-based play, user-centered design, and generative AI.",
+        "Developed and evaluated a tablet-based co-play prototype with The LEGO Group, combining building with physical LEGO bricks, shared storytelling, and generative AI, and refined it through three play sessions with children and parents.",
       ],
       period: "Sep 2024 - Jun 2026",
     },
@@ -59,7 +70,7 @@ export function ExperienceSection() {
       degree: "Aalborg Sportshøjskole",
       program: "Aalborg Sportshøjskole, Aalborg",
       bullets: [
-        "I developed a lot both socially and personally.",
+        "A year that helped me grow personally and socially and gave me a strong network.",
       ],
       period: "Aug 2020 - Jun 2021",
     },
@@ -67,7 +78,7 @@ export function ExperienceSection() {
       degree: "Mathematics A - Single Subject Course",
       program: "Niels Brock - Copenhagen Business College, Nørre Voldgade 34, Copenhagen",
       bullets: [],
-      period: "Mar 2020 - Juni 2020",
+      period: "Mar 2020 - Jun 2020",
     },
     {
       degree: "HTX - Communication/IT and Design",
